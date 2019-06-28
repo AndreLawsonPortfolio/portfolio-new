@@ -1333,7 +1333,7 @@ p {
   
     margin: 0;
     padding: 0;
-    overflow-x: hidden;	
+   
 	}
 
 	.left-column {
@@ -1426,6 +1426,10 @@ p {
 
 	.testimonials img {
 		width: 100%;
+	}
+	
+	content--services {
+    		overflow-x: hidden;
 	}
 
 	#services h1 {
