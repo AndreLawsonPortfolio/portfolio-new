@@ -1326,6 +1326,10 @@ p {
 		top: 55px;
 		height: 50% !important;
 	}
+	
+	.body {
+	 	width: 119%;	
+	}
 
 	.left-column {
 		width: 100%;
