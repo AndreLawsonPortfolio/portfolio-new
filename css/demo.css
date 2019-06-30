@@ -1424,7 +1424,7 @@ p {
 	}
 	
 	.content--services  {
-		overflow-x: hidden !important;
+		overflow: auto;
 	
 	}
 	
