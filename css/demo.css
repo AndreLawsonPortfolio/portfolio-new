@@ -1419,7 +1419,7 @@ p {
 	}
 
 	.content--services  {
-		overflow-x: hidden ;
+		overflow: auto ;
 	
 	}
 
