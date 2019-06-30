@@ -193,10 +193,10 @@ main {
 }
 
 .content--services {
+	position: relative;
 	width: 100%;
 	height: 100vh;
 	display: block;
-	position: relative;
 	text-align: center;
 
 }
@@ -209,7 +209,7 @@ main {
 }
 
 .touch {
-  -webkit-overflow-scrolling: touch !important;
+  -webkit-overflow-scrolling: touch;
 }
 
 .content__inner {
@@ -1319,7 +1319,9 @@ p {
 /*MOBILE DEVICES */
 @media only screen and (max-width: 767px) {
 
-
+	body {
+        overflow: hidden!important;
+	}
 	
 	.hero {
 		width: 100%;
@@ -1421,7 +1423,7 @@ p {
 	}
 
 	.content--services  {
-		overflow-x: hidden;
+		overflow-x: hidden ;
 	
 	}
 
