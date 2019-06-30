@@ -1317,9 +1317,7 @@ p {
 /*MOBILE DEVICES */
 @media only screen and (max-width: 767px) {
 
-	body {
-        overflow: hidden!important;
-	}
+
 	
 	.hero {
 		width: 100%;
@@ -1420,7 +1418,10 @@ p {
 		width: 100%;
 	}
 
-
+	.content--services  {
+		overflow-x: hidden ;
+	
+	}
 
 	#services h1 {
 		font-size: 52px;
