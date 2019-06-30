@@ -4,22 +4,17 @@
 	box-sizing: border-box;
 }
 
-
-
 body {
 	font-family: 'Montserrat', sans-serif;
-	min-width: 100%;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px !important;
-    overflow-x: hidden;
+	min-height: 100vh;
+	overflow-x: hidden;
 	color: #57585c;
 	color: var(--color-text);
 	background-color: #fff;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
 
 /* Color schemes */
 .demo-1 {
@@ -1426,6 +1421,11 @@ p {
 
 	.testimonials img {
 		width: 100%;
+	}
+	
+	.content--services  {
+		overflow-x: hidden ;
+	
 	}
 	
 	
