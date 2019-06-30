@@ -207,7 +207,7 @@ main {
 }
 
 .touch {
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch !important;
 }
 
 .content__inner {
