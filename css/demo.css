@@ -567,7 +567,6 @@ form {
 }
 
 .enter, .explore {    
-	margin: 6vh 0 0 0;
 	font-size: 1em;
 	letter-spacing: 3px;
 	cursor: pointer;
@@ -836,6 +835,8 @@ margin-right: 10px;
 
 .first-img {
 	display: block;
+	width: 100%;
+    	max-width: 540px;
 }
 
 .jumbotron {
