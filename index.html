@@ -17,6 +17,16 @@
 		<link rel="stylesheet" type="text/css" href="css/uncover.css" />
 		<link rel="stylesheet" type="text/css" href="pater/pater.css" />
 	</head>
+	<style>
+	 .clearfix {
+  	    overflow: auto;
+	    }
+	 .clearfix::after {
+  	    content: "";
+  	    clear: both;
+  	    display: table;
+	    }
+	</style>
 	<body data-spy="scroll" data-target="#main-navbar" data-offset="70" class="demo-1 loading">
 		<main>
 			<!--
@@ -63,7 +73,7 @@
 			</div><!-- /content -->
 			<div class="content content--fixed touch">
 				
-				<div id="content__headerinner" style="background: url('img/background-header.jpg') repeat center; background-size: cover;">
+				<div id="content__headerinner clearfix" style="background: url('img/background-header.jpg') repeat center; background-size: cover;">
 					<img src="img/welcome.png" class="welcome">
 					<h1></h1>
 				</div>
