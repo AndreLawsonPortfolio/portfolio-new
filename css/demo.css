@@ -957,22 +957,6 @@ p {
 	clear: both;
 }
 
-.left-column {
-	float: left;
-	position: relative;
-	right: 30px;
-	top: 47px;
-	width: 50%;
-	display: inline-block;
-}
-
-.right-column {
-	float: left;
-	position: relative;
-	top: 44px;
-	width: 50%;
-	display: inline-block;
-}
 
 .right-img {
 	width: 100%;
