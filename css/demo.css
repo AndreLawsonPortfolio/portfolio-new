@@ -353,7 +353,7 @@ main {
   border-radius: 50%;
   background-color: #5A9995;	
 }
-.testimonials .container {
+.testimonials .3 {
 	background: transparent;
 }
 
@@ -881,7 +881,6 @@ p {
 .container {
 	max-width: 1200px;
 	width: 100%;
-	background: #fff;
 	margin: 0 auto;
 }
 
