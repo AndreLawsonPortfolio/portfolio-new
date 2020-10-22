@@ -27,7 +27,14 @@
            margin: 0 auto;
 		  
              }
-	    }
+		
+	.info-area {
+    	  display: -ms-grid;
+          display: grid;
+          -ms-grid-columns: (1fr)[2];
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 40px;
+	   }
 	</style>
 	<body data-spy="scroll" data-target="#main-navbar" data-offset="70" class="demo-1 loading">
 		<main>
@@ -78,8 +85,13 @@
 				<section id="top-jumbo">
 				       <div class="container">
 					 <div class="row">
-					   <div class="info">
-					    <img class="welcome" src="https://i.ibb.co/ns5HMGW/18824957-Converted.png">
+					   <div class="info-area">
+				             <div class="left-column">
+						<img class="welcome" src="https://i.ibb.co/ns5HMGW/18824957-Converted.png">
+				             </div>
+					     <div class="right-column">
+						<img class="welcome" src="https://i.ibb.co/ns5HMGW/18824957-Converted.png">
+				             </div>
 				           </div>
 					  </div>
 				       </div>
