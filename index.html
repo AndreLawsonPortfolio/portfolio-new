@@ -187,6 +187,8 @@
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="js/css3-animate-it.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
 
 			<script src="js/imagesloaded.pkgd.min.js"></script>
 			<script src="js/charming.min.js"></script>
@@ -220,6 +222,27 @@
 						} // End if
 					  });
 					});
+				
+				gsap.registerPlugin(ScrollTrigger);
+
+
+
+
+  
+  gsap.utils.toArray('section').forEach((section, index) => {
+    const w = section.querySelector('.info-area');
+    const [x, xEnd] = (index % 2) ? ['100%', (w.scrollWidth - section.offsetWidth) * -1] : [w.scrollWidth * -1, 0];
+    gsap.fromTo(w, {  x  }, {
+      x: xEnd,
+      scrollTrigger: { 
+        trigger: section, 
+        scrub: 0.5 
+      }
+    });
+  });
+}
+
+imagesLoaded(images).on('progress', updateProgress).on('always', showDemo);
 					</script>
 		</main>
 		
