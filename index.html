@@ -94,7 +94,7 @@
 			</div><!-- /content -->
 			<div class="content content--fixed touch">
 				
-				<section id="top-jumbo">
+				<section id="top-jumbo panel">
 				       <div class="container">
 					 <div class="row">
 					   <div class="info-area">
@@ -109,7 +109,7 @@
 				       </div>
 				</section>
 				
-				<section id="about-me">
+				<section id="about-me panel">
 					<div id="content__headerinner clearfix" style="background: url('img/background-header.jpg') repeat center; background-size: cover;">
 					 <img src="img/welcome.png" class="welcome">
 				       </div>
@@ -225,24 +225,19 @@
 				
 				gsap.registerPlugin(ScrollTrigger);
 
-
-
-
-  
-  gsap.utils.toArray('section').forEach((section, index) => {
-    const w = section.querySelector('.info-area');
-    const [x, xEnd] = (index % 2) ? ['100%', (w.scrollWidth - section.offsetWidth) * -1] : [w.scrollWidth * -1, 0];
-    gsap.fromTo(w, {  x  }, {
-      x: xEnd,
-      scrollTrigger: { 
-        trigger: section, 
-        scrub: 0.5 
-      }
-    });
+gsap.utils.toArray(".panel").forEach((panel, i) => {
+  ScrollTrigger.create({
+    trigger: panel,
+    start: "top top", 
+    pin: true, 
+    pinSpacing: false 
   });
-}
+});
 
-imagesLoaded(images).on('progress', updateProgress).on('always', showDemo);
+
+ScrollTrigger.create({
+  snap: 1 / 4 // snap whole page to the closest section!
+});
 					</script>
 		</main>
 		
